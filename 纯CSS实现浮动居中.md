@@ -44,6 +44,21 @@ li{
 解决方案一：在li最后加上多个无内容无高度的li，但是增加了很多无意义的标签，而且破环了html结构，也不算是纯css实现。
 
 ### 实现方案三 ###
-通过position:relative;
+通过position:relative;然后改变父子元素的相对位移来实现居中。
+```
+ul{
+	position: relative;
+	left: 50%;
+	float: left;
+}
+li{
+	position: relative;
+	left: -50%;
+	float: left;
+}
+```
+[具体代码](http://codepen.io/zhangjialiang/pen/pJbPmp)
+其中ul首先与父元素发生向右50%的位移，这时候li的起始位置成为ul的center位置，li再向左偏移ul的50%的的距离，就可以实现浮动居中。其中ul的float：left用来实现BFC，使得ul的宽度正好包裹li，也可以用其他能触发bfc的方法替代。
+可惜的是：该方案只能实现单行居中。
 
-
+终上所述，实现浮动居中，还是用js吧。
