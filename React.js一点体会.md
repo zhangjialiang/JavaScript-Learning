@@ -2,15 +2,15 @@
 
 ###一. 相关介绍和传送门###
 reactjs是facebook公司开发的用于构建界面ui的javascript库，其主要特点包括：jsx语法，virtual DOM，单向数据绑定等。  
--[GitHub地址](https://github.com/facebook/react)
+-[GitHub地址](https://github.com/facebook/react)  
 如果想学习ReactJs的基本语法和用法，请点击下面的文档链接。*在官方文档中有完整的教程教你如何用reactjs构建一个简单的web项目的view*  
 -[文档地址--English](http://facebook.github.io/react/docs/tutorial.html)      	-[文档地址--中文](http://reactjs.cn/react/docs/getting-started.html)  
-reactjs还有两个衍生项目：
--[react-native](https://github.com/facebook/react-native)用reactjs写app
+reactjs还有两个衍生项目：  
+-[react-native](https://github.com/facebook/react-native)用reactjs写app  
 -[react-canvas](https://github.com/Flipboard/react-canvas)用canvas代替dom作为ui，使得移动端界面展示更为流畅
 
 ###二. 构建DOM###
-reactjs使用其特有的jsx语法构建dom结构，下面用一个简单的例子介绍其语法。
+reactjs使用其特有的jsx语法构建dom结构，下面用一个简单的例子介绍其语法。  
 假设我们要构造如下的一个dom结构
 `<a class="link" href="https://www.baidu.com">link</a>
 `
@@ -39,7 +39,7 @@ var Link = React.createClass({
 这个Link类就是a标签进过封装后的呈现，如果要在html中加入这个a标签，只需要调用以下语句：
 `React.render(<Link />,document.getElementById('div'));
 `
-React.createClass中render方法return的的结构就是jsx语法，由于其是混合在js中，所以js中的保留字它并不能使用，class需要使用className替代。另外由于return的语法特点，React.createClass生成的类构建的dom结构必须有且只有一个元素包裹，某些情况下会增加dom结构复杂度。
+React.createClass中render方法return的的结构就是jsx语法，由于其是混合在js中，所以js中的保留字它并不能使用，class需要使用className替代。另外由于return的语法特点，React.createClass生成的类构建的dom结构必须有且只有一个元素包裹，某些情况下会增加dom结构复杂度。  
 从上面的例子我们可以看出ReactJs这种构建dom结构的方式与web component有着很多共通点，可以认为是一种web component的实现，通过class中生命周期相关函数，ReactJs能够轻松构建被反复操作重用的web组件。
 ###三. React.createClass的特点###
 reactjs中有丰富的生命周期回调函数：
