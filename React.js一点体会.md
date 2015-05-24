@@ -1,10 +1,10 @@
 #ReactJs学习体会#
 
 ###一. 相关介绍和传送门###
-reactjs是facebook公司开发的用于构建界面ui的javascript库，其主要特点包括：jsx语法，virtual DOM，单向数据绑定等。
+reactjs是facebook公司开发的用于构建界面ui的javascript库，其主要特点包括：jsx语法，virtual DOM，单向数据绑定等。  
 -[GitHub地址](https://github.com/facebook/react)
-如果想学习ReactJs的基本语法和用法，请点击下面的文档链接。*在官方文档中有完整的教程教你如何用reactjs构建一个简单的web项目的view*
--[文档地址--English](http://facebook.github.io/react/docs/tutorial.html)      	-[文档地址--中文](http://reactjs.cn/react/docs/getting-started.html)
+如果想学习ReactJs的基本语法和用法，请点击下面的文档链接。*在官方文档中有完整的教程教你如何用reactjs构建一个简单的web项目的view*  
+-[文档地址--English](http://facebook.github.io/react/docs/tutorial.html)      	-[文档地址--中文](http://reactjs.cn/react/docs/getting-started.html)  
 reactjs还有两个衍生项目：
 -[react-native](https://github.com/facebook/react-native)用reactjs写app
 -[react-canvas](https://github.com/Flipboard/react-canvas)用canvas代替dom作为ui，使得移动端界面展示更为流畅
