@@ -1,5 +1,5 @@
 #利用border实现各种动画效果#
-<style>
+<style type="text/css">
 body {
   background: #333;
   overflow: auto;
