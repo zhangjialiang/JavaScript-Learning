@@ -87,9 +87,8 @@ jQuery.each( tuples, function( i, tuple ) {
 ```
 tips：对于一些简单的数值操作，如果没有较大的复杂度区别，尽可能使用易读的操作。在遍历代码中tuples[ 3 - i ][ 2 ].disable,在较早的版本中使用的是tuples[ i ^ 1 ][ 2 ].disable。
 
-下面看then的实现，老版本是pipe，因此pipe就不分析了。
+下面看then的实现，老版本是pipe。
 ###then###
 then中主要做的事包括以下几件：
 * 返回一个新的promise对象
 * 对返回的对象做一次过滤。
-* 
